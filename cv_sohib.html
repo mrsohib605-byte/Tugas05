@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   <!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV - Muhammad Sohib</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f7f5;
+            color: #333;
+            line-height: 1.6;
+            padding: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: #fff;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+            border-radius: 12px;
+            overflow: hidden;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        
+        /* Animasi Gradasi Bergerak untuk Header */
+        @keyframes gradientMove {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+        
+        .header {
+            width: 100%;
+            /* Kombinasi Hijau dan Gold */
+            background: linear-gradient(-45deg, #138d38, #d4af37, #0b6623, #f3e5ab);
+            background-size: 300% 300%;
+            animation: gradientMove 8s ease infinite;
+            color: #fff;
+            padding: 40px 30px;
+            text-align: center;
+            text-shadow: 1px 1px 4px rgba(0,0,0,0.4);
+        }
+        .header h1 {
+            font-size: 32px;
+            margin-bottom: 5px;
+            letter-spacing: 1px;
+        }
+        .header p {
+            font-size: 16px;
+            color: #f8f9fa;
+            font-weight: 500;
+        }
+        .sidebar {
+            width: 35%;
+            background: #f9fbf9;
+            padding: 25px;
+            border-right: 1px solid #e0e0e0;
+        }
+        .main-content {
+            width: 65%;
+            padding: 25px;
+        }
+        .section-title {
+            font-size: 16px;
+            text-transform: uppercase;
+            border-bottom: 2px solid #138d38; /* Aksen hijau */
+            padding-bottom: 5px;
+            margin-bottom: 15px;
+            color: #138d38;
+            font-weight: bold;
+        }
+        .contact-info, .skills-list, .education-item, .experience-item {
+            margin-bottom: 20px;
+        }
+        .contact-info p, .education-item p, .experience-item p {
+            font-size: 13.5px;
+            margin-bottom: 8px;
+        }
+        .skills-list {
+            list-style-type: none;
+        }
+        .skills-list li {
+            background: #d4af37; /* Aksen Gold */
+            color: #fff;
+            padding: 5px 10px;
+            border-radius: 6px;
+            margin-bottom: 8px;
+            display: inline-block;
+            font-size: 12px;
+            font-weight: bold;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .experience-item h3, .education-item h3 {
+            font-size: 15px;
+            color: #2c3e50;
+        }
+        .date {
+            font-size: 12px;
+            color: #138d38;
+            font-style: italic;
+            margin-bottom: 5px;
+            font-weight: 600;
+        }
+        @media (max-width: 600px) {
+            .sidebar, .main-content {
+                width: 100%;
+                border-right: none;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Header dengan animasi background -->
+        <div class="header">
+            <h1>Muhammad Sohib</h1>
+            <p>Web Developer & Desainer Grafis</p>
+        </div>
+
+        <!-- Sidebar / Informasi Kontak & Keahlian -->
+        <div class="sidebar">
+            <div class="section-title">Kontak & Info</div>
+            <div class="contact-info">
+                <p><strong>Tanggal Lahir:</strong> 09 Mei 2005</p>
+                <p><strong>Telepon:</strong> 085138515315</p>
+                <p><strong>Lokasi:</strong> Lumajang</p>
+                <p><strong>Email:</strong> m.sohib@email.com</p>
+                <p><strong>LinkedIn:</strong> linkedin.com/in/m-sohib</p>
+            </div>
+
+            <div class="section-title">Keahlian</div>
+            <ul class="skills-list">
+                <li>HTML5</li>
+                <li>CSS3 / Flexbox</li>
+                <li>JavaScript</li>
+                <li>PHP & MySQL</li>
+                <li>Figma</li>
+                <li>UI/UX Design</li>
+            </ul>
+
+            <div class="section-title">Bahasa</div>
+            <div class="contact-info">
+                <p>Indonesia (Aktif)</p>
+                <p>Inggris (Pasif)</p>
+            </div>
+        </div>
+
+        <!-- Konten Utama / Pengalaman & Pendidikan -->
+        <div class="main-content">
+            <div class="section-title">Profil Singkat</div>
+            <p style="font-size: 13.5px; margin-bottom: 25px;">
+                Seorang Web Developer muda yang bersemangat dalam membangun antarmuka website yang responsif, bersih, dan ramah pengguna. Memiliki pemahaman yang baik mengenai struktur HTML dan desain UI/UX yang modern.
+            </p>
+
+            <div class="section-title">Pengalaman Kerja</div>
+            <div class="experience-item">
+                <h3>Frontend Developer (Magang)</h3>
+                <div class="date">Januari 2024 - Juni 2024 | PT Teknologi Nusantara</div>
+                <p>- Membantu membangun tampilan halaman depan (landing page) menggunakan HTML, CSS, dan JavaScript.</p>
+                <p>- Melakukan perbaikan bug tampilan (responsive design) pada perangkat mobile.</p>
+            </div>
+            <div class="experience-item">
+                <h3>Freelance Web Designer</h3>
+                <div class="date">2023 - Sekarang</div>
+                <p>- Mendesain mock-up UI menggunakan Figma untuk klien UMKM lokal.</p>
+            </div>
+
+            <div class="section-title">Pendidikan</div>
+            <div class="education-item">
+                <h3>S1 Teknik Informatika</h3>
+                <div class="date">2023 - Sekarang</div>
+                <p>Universitas Contoh, Lumajang</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
+</head>
+<body>
+    
+</body>
+</html>
